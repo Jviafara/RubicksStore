@@ -1,7 +1,7 @@
 import axios from 'axios'
 import queryString from 'query-string'
 
-const baseURL = 'http://localhost:8080/api/v1'
+const baseURL = process.env.REACT_APP_BASE_URL || 'http://localhost:8080/api/v1'
 // const baseURL = 'https://rubikstore.onrender.com/api/v1';
 // const baseURL = 'https://rubicksstore.up.railway.app/api/v1';
 
