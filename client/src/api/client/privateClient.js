@@ -2,10 +2,6 @@ import axios from 'axios'
 import queryString from 'query-string'
 
 const baseURL = process.env.REACT_APP_BASE_URL
-console.log('baseURL:', baseURL)
-// const baseURL = 'https://rubikstore.onrender.com/api/v1';
-// const baseURL = 'https://rubicksstore.up.railway.app/api/v1';
-
 const privateClient = axios.create({
   baseURL,
   paramsSerializer: { encode: params => queryString.stringify(params) },
